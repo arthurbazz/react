@@ -1,2 +1,2 @@
 # react
-Codecademy react classes and exercises.
+React exercises.
