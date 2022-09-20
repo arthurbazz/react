@@ -1,5 +1,6 @@
 import React from "react";
 import Avatar from "./Avatar";
+import '../assets/styles/card.css';
 
 // user profile card component
 const UserProfileCard = () => {
