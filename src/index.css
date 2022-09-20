@@ -24,3 +24,37 @@ code {
   margin: 0 auto;
 }
 
+/* Click Event Styles */
+.counter-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+.click-btn {
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  /* display: inline-block; */
+  font-size: 16px;
+  margin: 10px 10px;
+  cursor: pointer;
+}
+
+.click-btn:hover {
+  cursor: pointer;
+  background-color: #2d6830;
+  font-weight: 600;
+}
+
+.counter-label {
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center;
+}
+
