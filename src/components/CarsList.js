@@ -10,6 +10,7 @@ const CarsList = () => {
     return <li key={car}>{car}</li>;
   });
 
+  // render...
   return (
     <section>
       {/* display ordered list of cars */}
