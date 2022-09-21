@@ -63,7 +63,7 @@ code {
 }
 
 /* Change event styles */
-.form-container {
+form {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -82,4 +82,17 @@ input {
   margin: 10px 0;
   width: 100%;
   max-width: 300px;
+}
+
+/* Mouse Event Styles */
+.hover-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: black;
+  color: #fff;
+  margin-bottom: 50px;
+  cursor: pointer;
 }
