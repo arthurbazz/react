@@ -1,5 +1,6 @@
 // src/app.js
 import React from "react";
+import Car from "./components/Car";
 import CarsList from "./components/CarsList";
 import ChangeEvent from "./components/ChangeEvent";
 import ClickEvent from "./components/ClickEvent";
@@ -20,6 +21,13 @@ const App = () => {
       <ClickEvent />
       <ChangeEvent />
       <MouseEvent />
+
+      {/* passing an object as prop */}
+      <Car data={{
+        brand: 'Audi',
+        color: 'Red',
+        year: 2022
+      }} />
     </section>
   );
 };
