@@ -96,3 +96,14 @@ input {
   margin-bottom: 50px;
   cursor: pointer;
 }
+
+/* Prop Styles */
+.car {
+  background-color: #4CAF50;
+  color: #fff;
+  text-align: center;
+  max-width: 200px;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
