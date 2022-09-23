@@ -4,6 +4,7 @@ import Car from "./components/Car";
 import CarsList from "./components/CarsList";
 import ChangeEvent from "./components/ChangeEvent";
 import ClickEvent from "./components/ClickEvent";
+import UseEffect from "./components/Hooks/UseEffect";
 import MouseEvent from "./components/MouseEvent";
 // import UserList from "./components/UserList";
 import UserProfileCard from "./components/UserProfileCard";
@@ -28,6 +29,9 @@ const App = () => {
         color: 'Red',
         year: 2022
       }} />
+
+      {/* hooks */}
+      <UseEffect />
     </section>
   );
 };
