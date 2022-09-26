@@ -4,6 +4,7 @@ import Car from "./components/Car";
 import CarsList from "./components/CarsList";
 import ChangeEvent from "./components/ChangeEvent";
 import ClickEvent from "./components/ClickEvent";
+import CustomHooksApp from "./components/Hooks/CustomHooks";
 import UseEffect from "./components/Hooks/UseEffect";
 import MouseEvent from "./components/MouseEvent";
 // import UserList from "./components/UserList";
@@ -32,6 +33,7 @@ const App = () => {
 
       {/* hooks */}
       <UseEffect />
+      <CustomHooksApp />
     </section>
   );
 };
