@@ -1,5 +1,6 @@
 // src/app.js
 import React from "react";
+// components
 import Car from "./components/Car";
 import CarsList from "./components/CarsList";
 import ChangeEvent from "./components/ChangeEvent";
@@ -7,8 +8,14 @@ import ClickEvent from "./components/ClickEvent";
 import CustomHooksApp from "./components/Hooks/CustomHooks";
 import UseEffect from "./components/Hooks/UseEffect";
 import MouseEvent from "./components/MouseEvent";
-// import UserList from "./components/UserList";
 import UserProfileCard from "./components/UserProfileCard";
+// Routes...
+import { Routes } from "react-router-dom";
+import { Route } from "react-router-dom";
+// pages
+import HomePage from "./pages/hompage";
+import AboutPage from "./pages/aboutpage";
+
 
 // create root component => App
 const App = () => {
@@ -17,7 +24,6 @@ const App = () => {
     <section className="main-page">
       <UserProfileCard />
       <CarsList />
-      {/* <UserList /> */}
 
       {/* events */}
       <ClickEvent />
@@ -34,6 +40,12 @@ const App = () => {
       {/* hooks */}
       <UseEffect />
       <CustomHooksApp />
+
+      {/* Routes */}
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/about" element={<AboutPage />} />
+      </Routes>
     </section>
   );
 };
