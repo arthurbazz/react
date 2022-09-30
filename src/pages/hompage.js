@@ -1,7 +1,32 @@
-import { Link } from "react-router-dom";
+import { useEffect } from "react";
+import { Link, useLocation, useSearchParams } from "react-router-dom";
 import "../assets/styles/home.css";
 // homepage component...
 const HomePage = () => {
+  // use location hook to get url params
+  const Location = useLocation();
+  console.log(Location);
+  
+  // useSearchParam hook to get the value of the search parameter
+  const [searchParams, setSearchParams] = useSearchParams("search");
+  // useEffect hook to update the search parameter
+  useEffect(() => {
+    // set the value of the search parameter
+    setSearchParams({
+      id: 156,
+    });
+
+    // setSearchParams((prev) => {
+    //   return {
+    //     ...prev,
+    //     id: 156,
+    //   };
+    // });
+
+    // Get the value of the search parameter
+    console.log(searchParams.get("id"));
+  }, [searchParams, setSearchParams]);
+
   return (
     <div className="home-container">
       {" "}
